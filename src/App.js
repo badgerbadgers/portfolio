@@ -7,8 +7,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route index element={<Home />} />
+        <Route path="/" element={
+        <>
+        <Layout />
+        <Home />
+        </>
+        } />
+        {/* <Route index element={<Home />} /> */}
       </Routes>
     </>
   );
